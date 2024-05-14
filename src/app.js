@@ -24,10 +24,21 @@ window.onload = () => {
 };
 
 function press() {
-  let quien = Math.round(Math.random() * 4);
-  let acto = Math.round(Math.random() * 4);
-  let que = Math.round(Math.random() * 4);
-  let cuando = Math.round(Math.random() * 4);
+  let quien = Math.round(Math.random() * (who.length - 1));
+  let acto = Math.round(Math.random() * (action.length - 1));
+  let que = Math.round(Math.random() * (what.length - 1));
+  let cuando = Math.round(Math.random() * (when.length - 1));
 
   return who[quien] + " " + action[acto] + " " + what[que] + " " + when[cuando];
 }
+let agregar = document.getElementById("agregar");
+let newWho = document.getElementById("nuevoQuien");
+
+agregar.addEventListener("click", () => {
+  who.push(newWho.value);
+  newWho.value = "";
+  newWho.focus();
+});
+//lo que viene del input
+//capitalize
+//.push al array correspondiente
