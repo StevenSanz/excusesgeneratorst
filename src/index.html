@@ -38,10 +38,70 @@
         !Go!
       </button>
     </div>
-    <div class="container d-flex justify-content-center mt-4">
-      <input id="nuevoQuien" type="text" />
-      <button id="agregar" class="btn btn-outline-dark">Añadir</button>
+    <div class="container d-flex justify-content-center mt-3 mb-3">
+      <h3>añade tus ideas</h3>
     </div>
+    <div
+      id="carouselExampleControls"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="container d-flex justify-content-center mt-4">
+            <h5 class="me-2">Quien</h5>
+            <input id="nuevoQuien" type="text" />
+            <button id="agregarQuien" class="btn btn-outline-dark">
+              Añadir
+            </button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container d-flex justify-content-center mt-4">
+            <h5 class="me-2">Acto</h5>
+            <input id="nuevoActo" type="text" />
+            <button id="agregarActo" class="btn btn-outline-dark">
+              Añadir
+            </button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container d-flex justify-content-center mt-4">
+            <h5 class="me-2">Que</h5>
+            <input id="nuevoQue" type="text" />
+            <button id="agregarQue" class="btn btn-outline-dark">Añadir</button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container d-flex justify-content-center mt-4">
+            <h5 class="me-2">Cuando</h5>
+            <input id="nuevoCuando" type="text" />
+            <button id="agregarCuando" class="btn btn-outline-dark">
+              Añadir
+            </button>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev ms-5"
+        type="button"
+        data-bs-target="#carouselExampleControls"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next me-5"
+        type="button"
+        data-bs-target="#carouselExampleControls"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
       integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"

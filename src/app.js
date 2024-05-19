@@ -31,14 +31,38 @@ function press() {
 
   return who[quien] + " " + action[acto] + " " + what[que] + " " + when[cuando];
 }
-let agregar = document.getElementById("agregar");
+let agregarQuien = document.getElementById("agregarQuien"); //agregar nuevo sujeto
 let newWho = document.getElementById("nuevoQuien");
 
-agregar.addEventListener("click", () => {
+agregarQuien.addEventListener("click", () => {
   who.push(newWho.value);
   newWho.value = "";
   newWho.focus();
 });
-//lo que viene del input
-//capitalize
-//.push al array correspondiente
+
+let agregarActo = document.getElementById("agregarActo"); //agregar nueva acción
+let newActo = document.getElementById("nuevoActo");
+
+agregarActo.addEventListener("click", () => {
+  action.push(newActo.value);
+  newActo.value = "";
+  newActo.focus();
+});
+
+let agregarQue = document.getElementById("agregarQue"); // agregar nuevo que
+let newWhat = document.getElementById("nuevoQue");
+
+agregarQue.addEventListener("click", () => {
+  what.push(newWhat.value);
+  newWhat.value = "";
+  newWhat.focus();
+});
+
+let agregarCuando = document.getElementById("agregarCuando"); // agregar nuevo cuando
+let newWhen = document.getElementById("nuevoCuando");
+
+agregarCuando.addEventListener("click", () => {
+  when.push(newWhen.value);
+  newWhen.value = "";
+  newWhen.focus();
+});
